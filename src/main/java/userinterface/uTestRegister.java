@@ -18,12 +18,45 @@ public class uTestRegister {
             .located(By.id("birthDay"));
     public static final Target Input_Year = Target.the("Se ingresa el año de nacimiento")
             .located(By.id("birthYear"));
+    public static final Target Input_Language = Target.the("Se ingresa el idioma")
+            .located(By.xpath("/html/body/ui-view/main/section/div/div[2]/div/div[2]/div/form/div[1]/div[3]/div[5]/div[2]/div[1]/input"));
+
     public static final Target Next_Button = Target.the("Next:Location")
             .located(By.xpath("/html/body/ui-view/main/section/div/div[2]/div/div[2]/div/form/div[2]/a"));
     public static final Target City = Target.the("Ciudad")
             .located(By.id("city"));
     public static final Target Zip = Target.the("Code")
             .located(By.id("zip"));
+    public static final Target Country = Target.the("Country")
+            .located(By.xpath("/html/body/ui-view/main/section/div/div[2]/div/div[2]/div/form/div[1]/div[3]/div[1]/div[4]/div[2]/div/div/div[1]"));
+    public static final Target Country_Container = Target.the("Container click")
+            .located(By.xpath("/html/body/ui-view/main/section/div/div[2]/div/div[2]/div/form/div[1]/div[3]/div[1]/div[4]/div[2]/div/div/input[1]"));
+    /*Divices*/
+    public static final Target Container_Computer = Target.the("Container computer Click")
+            .located(By.xpath("/html/body/ui-view/main/section/div/div[2]/div/div[2]/div/div[1]/div[3]/div[1]/div[1]/div[2]/div/div[1]/span"));
+    public static final Target input_Computer = Target.the("computer Click")
+            .located(By.xpath("/html/body/ui-view/main/section/div/div[2]/div/div[2]/div/div[1]/div[3]/div[1]/div[1]/div[2]/div/input[1]"));
+    public static final Target Container_Version = Target.the("Container version Click")
+            .located(By.xpath("/html/body/ui-view/main/section/div/div[2]/div/div[2]/div/div[1]/div[3]/div[1]/div[2]/div[2]/div/div[1]/span"));
+    public static final Target Input_Version = Target.the("version Click")
+            .located(By.xpath("/html/body/ui-view/main/section/div/div[2]/div/div[2]/div/div[1]/div[3]/div[1]/div[2]/div[2]/div/input[1]"));
+    public static final Target Container_Language = Target.the("Container language Click")
+            .located(By.xpath("/html/body/ui-view/main/section/div/div[2]/div/div[2]/div/div[1]/div[3]/div[1]/div[3]/div[2]/div/div[1]/span"));
+    public static final Target Input_LanguageComputer = Target.the("language Click")
+            .located(By.xpath("/html/body/ui-view/main/section/div/div[2]/div/div[2]/div/div[1]/div[3]/div[1]/div[3]/div[2]/div/input[1]"));
+    public static final Target Container_Mobile = Target.the("Container mobile Click")
+            .located(By.xpath("/html/body/ui-view/main/section/div/div[2]/div/div[2]/div/div[1]/div[3]/div[2]/div[1]/div[2]/div/div[1]/span"));
+    public static final Target Input_Mobile = Target.the("mobile Click")
+            .located(By.xpath("/html/body/ui-view/main/section/div/div[2]/div/div[2]/div/div[1]/div[3]/div[2]/div[1]/div[2]/div/input[1]"));
+    public static final Target Container_Model = Target.the("Container model Click")
+            .located(By.xpath("/html/body/ui-view/main/section/div/div[2]/div/div[2]/div/div[1]/div[3]/div[2]/div[2]/div[2]/div/div[1]/span"));
+    public static final Target Input_Model = Target.the("model Click")
+            .located(By.xpath("/html/body/ui-view/main/section/div/div[2]/div/div[2]/div/div[1]/div[3]/div[2]/div[2]/div[2]/div/input[1]"));
+    public static final Target Container_System = Target.the("Container system Click")
+            .located(By.xpath("/html/body/ui-view/main/section/div/div[2]/div/div[2]/div/div[1]/div[3]/div[2]/div[3]/div[2]/div/div[1]/span"));
+    public static final Target Input_System= Target.the("system Click")
+            .located(By.xpath("/html/body/ui-view/main/section/div/div[2]/div/div[2]/div/div[1]/div[3]/div[2]/div[3]/div[2]/div/input[1]"));
+    /*Fin Devices*/
     public static final Target Next_Button_Devices = Target.the("Next:Devices")
             .located(By.xpath("/html/body/ui-view/main/section/div/div[2]/div/div[2]/div/form/div[2]/div/a"));
     public static final Target Button_Next_Last = Target.the("Next:Last_Step")
