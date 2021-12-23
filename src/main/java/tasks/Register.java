@@ -9,6 +9,8 @@ import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.Tasks;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
+import net.serenitybdd.screenplay.matchers.WebElementStateMatchers;
+import net.serenitybdd.screenplay.waits.WaitUntil;
 
 public class Register implements Task {
 
@@ -68,9 +70,12 @@ public class Register implements Task {
             Click.on(uTestRegister.Input_Language),
             Enter.theValue((language_Language)).into(uTestRegister.Input_Language).thenHit(Keys.ENTER),
             Click.on(uTestRegister.Next_Button),
+            WaitUntil.the(uTestRegister.City, WebElementStateMatchers.isEnabled()),
             Enter.theValue((city_City)).into(uTestRegister.City),
             Hit.the(Keys.ARROW_DOWN).into(uTestRegister.City),
+            WaitUntil.the(uTestRegister.City, WebElementStateMatchers.isEnabled()),
             Hit.the(Keys.ENTER).into(uTestRegister.City),
+            WaitUntil.the(uTestRegister.Zip, WebElementStateMatchers.isEnabled()),
             Enter.theValue((postal_Code)).into(uTestRegister.Zip),
             Click.on(uTestRegister.Country),
             Enter.theValue((country_Country)).into(uTestRegister.Country_Container).thenHit(Keys.ARROW_DOWN, Keys.ENTER),
